@@ -43,7 +43,7 @@
 
 #### End goal:
 
-*Add an image of the final visualization here.*
+![image of solution to ex1](https://github.com/kowalski-phil/sme-bi-course-application/blob/master/exercises/1st-VM-Exercise-Row-Aggregator-Final.png)
 
 ## 2nd VM Exercise
 

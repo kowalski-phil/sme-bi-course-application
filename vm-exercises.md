@@ -13,12 +13,12 @@
 
 #### Files
 
-- [x] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-row-aggregator-initial.knwf'
-- [x] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-row-aggregator-sol.knwf'
+- [x] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-row-aggregator-initial.knwf`
+- [x] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-row-aggregator-sol.knwf`
 
 #### Learning Objective
 
-*By the end of this exercise, students will be able to use the Row Aggregator node in KNIME to summarize sales data effectively.*
+*By the end of this exercise, learners will be able to use the Row Aggregator node in KNIME to summarize sales data effectively.*
 
 #### Context
 
@@ -49,34 +49,39 @@
 
 #### Dataset
 
-- [ ] Add datasets used to the `datasets/` folder
+- [x] Add datasets used to the `datasets/` folder
 
 #### Files
 
-- [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-intial.twbx` or `ex-1-initial.yxmd`, depending if you are auditioning for a Tableau/Power BI/Alteryx course.
-- [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-sol.twbx` or `ex-2-sol.pbix` or `ex-1-sol.yxmd`
+- [x] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-pivot-initial.knwf`
+- [x] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-pivot-sol.knwf`
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+*By the end of this exercise, learners will be able to perform complex aggregations using the KNIME Pivot Node to transform and aggregate data effectively.*
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to learn how to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
+*Mastering the use of the KNIME Pivot Node is essential for data analysts. This node allows you to reshape data, making it easier to extract meaningful insights. For example, in a business setting, you might use the pivot node to summarize sales and customer data by different regions and agegroups, which can help in identifying trends and making informed decisions. The ability to pivot data efficiently can solve problems related to data aggregation, leading to more accurate and insightful analysis.*
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1
-- Step 2
-- Step 3
-- ...
+- Open the exercise file: Locate and open the 'ex-2-pivot-initial.knwf' file
+- Add the Pivot Node: Locate the Pivot Node in the Node Repository and drag it into your workflow. Connect it to the *String to Date & Time Node*
+- Configure the Pivot Node: In the Pivot Node configuration dialog (double-click to open), set the "Group Column" to *region*. Set the "Pivot Column" to *agregroup*.
+- Define Aggregation Method: Under the "Manual Aggregation" tab, add the purchase_amount and customer_name columns to the aggregation. Choose the aggregation methods: for purchase_amount select "Sum" (to summarize) and for customer_name select "Count" (to get the number of customers).
+- Execute the Node: Close the configuration and run the Pivot Node (F7 or the play button about the node).
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+*What is the sum of the purchase_amount (total sales) for the agegroup 35-44 in the Americas Region?*
+- 239,631.8
+- 98,430.43
+- 155,432.5 (correct answer)
 
 #### End goal:
 
-*Add an image of the final visualization here.*
+![image of solution to ex2](https://github.com/kowalski-phil/sme-bi-course-application/blob/master/exercises/2nd-VM-Exercise-Pivot-Final.png)
+
 
